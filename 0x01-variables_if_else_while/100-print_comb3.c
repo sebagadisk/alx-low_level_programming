@@ -1,24 +1,28 @@
 #include <stdio.h>
+
 /**
-* main - Print combinations of two digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - a simple program that outputs 0-9 separated by commas
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
-  int tens;
-  int ones;
+	int i;
+	int j;
 
-  for (tens = 0; tens <= 9; tens++)
-    for (ones = tens + 1; ones <= 9; ones++)
-      putchar(tens + '0');
-  putchar(ones + '0');
-  
-  if (tens < 8)
-    putchar(',');
-  putchar(' ');
-    
-  putchar('\n');
-  
-  return (0);
+	for (i = 48; i < 57; i++)
+	{
+		for (j = i + 1; j < 58; j++)
+		{
+			putchar(i);
+			putchar(j);
+			if (i != 56 || j != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
