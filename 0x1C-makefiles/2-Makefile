@@ -6,3 +6,4 @@ NAME = school
 	$(CC) -c -o $@ $<
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
