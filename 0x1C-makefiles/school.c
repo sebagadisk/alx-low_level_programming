@@ -1,4 +1,4 @@
-#include "make.h"
+#include "m.h"
 
 /**
  * print_school - print the logo of the school
